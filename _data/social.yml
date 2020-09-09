@@ -1,6 +1,6 @@
-- title: Twitter
-  url: https://twitter.com/ngzhio
-  icon: fab fa-twitter
+- title: blog
+  url: https://blog.naver.com/ekdusfl
+  icon: fab fa-naver
 - title: GitHub
-  url: https://github.com/ngzhio/jekyll-theme-hamilton
+  url: https://github.com/DAYEON-LEE
   icon: fab fa-github
