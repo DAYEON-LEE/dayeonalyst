@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Hello World
+title: 'Hello World'
 author: Dayeon Lee
-date: 2020-09-11 12:38:30 +0800
+date: '2020-09-11 12:38:00 +0800'
 tags: [test, hello]
 ---
 
