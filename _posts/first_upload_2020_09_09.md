@@ -1,3 +1,9 @@
+---
+layout: post
+title: Hello World
+author: Dayeon Lee
+date: 2020-09-11 12:38:30 +0800
+tags: [test, hello]
 
 저의 첫 번째 깃헙 블로그의 게시글이네요. 
 
