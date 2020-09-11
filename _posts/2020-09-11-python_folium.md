@@ -69,7 +69,9 @@ map
 - key_on : json파일에서 지역명이나 이름이 포함되어있는 위치
 
 
+
 ![png](/images/folium_map_changwon_ex.PNG)
+
 
 
 이렇게 folium으로 지도 시각화를 진행해보았다. 
