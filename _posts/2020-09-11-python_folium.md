@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "[python] folium 지도 시각화"
+excerpt: "folium으로 지도(map)시각화를 "
 author: Dayeon Lee
 date: 2020-09-11 21:42:00 +0800
 tags: [python, folium]
