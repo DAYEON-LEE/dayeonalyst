@@ -71,7 +71,7 @@ map
 
 
 
-![png](/images/folium_map_changwon_ex.PNG)
+![PNG](/images/folium_map_changwon_ex.PNG)
 
 
 
