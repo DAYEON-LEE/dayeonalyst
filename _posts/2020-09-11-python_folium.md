@@ -74,7 +74,7 @@ map
 
 
 
-![png](/images/folium_map_changwon_ex.PNG)
+![png]('C:/Users/user1/Desktop/다연/다연/파이썬\/공부]/DADADA/Git_blog/dayeonlyst.github.io/dayeonlyst.github.io/images/folium_map_changwon_ex.PNG')
 
 
 
