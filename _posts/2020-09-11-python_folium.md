@@ -71,7 +71,7 @@ map
 
 
 
-![PNG](/images/folium_map_changwon_ex.PNG)
+![png](dayeonlyst.github.io/images/folium_map_changwon_ex.PNG)
 
 
 
