@@ -74,7 +74,7 @@ map
 
 
 
-![png](/images/folium_map_changwon_ex.PNG)
+![folium_map_changwon_ex](https://user-images.githubusercontent.com/56374342/92986555-cdcb3400-f4f6-11ea-9cd1-f17e0cb4f472.PNG)
 
 
 
