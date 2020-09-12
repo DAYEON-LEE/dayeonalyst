@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[python] folium 지도 시각화"
-excerpt: "folium으로 지도(map)시각화를 "
+excerpt: "folium으로 지도(map)시각화를 해보자"
 author: Dayeon Lee
 date: 2020-09-11 21:42:00 +0800
 tags: [python, folium]
@@ -34,7 +34,7 @@ df
 ### 3. 지도의 정보가 들어가있는 json파일 
 시각화를 하기위해서는 json파일이 필요한데 나는 여기 올라와있는 깃헙의 파일을 다운받아 사용했다.
 > json 깃헙에서 제공 : [json파일](https://github.com/DAYEON-LEE/southkorea-maps/tree/master/kostat/2013/json) 
-> 
+
 하지만 창원시의 데이터만을 들고와 편집했다. 
 ```
 	[Output]
@@ -51,8 +51,11 @@ df
     .
     }
   ```
+  
   다음과 같이 type안에 features안에 properties안에 name이 창원시만을 포함하고 있다. 
+  
   ### 4. folium으로 지도 시각화 
+  
   ```python
   map = folium.Map(location=[35.2258,128.6075],zoom_start=9,
                  tiles='Stamen Toner')
@@ -71,7 +74,7 @@ map
 
 
 
-![PNG](/images/folium_map_changwon_ex.PNG)
+![png](/images/folium_map_changwon_ex.PNG)
 
 
 
