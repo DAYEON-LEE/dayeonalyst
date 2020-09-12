@@ -51,8 +51,11 @@ df
     .
     }
   ```
+  
   다음과 같이 type안에 features안에 properties안에 name이 창원시만을 포함하고 있다. 
+  
   ### 4. folium으로 지도 시각화 
+  
   ```python
   map = folium.Map(location=[35.2258,128.6075],zoom_start=9,
                  tiles='Stamen Toner')
