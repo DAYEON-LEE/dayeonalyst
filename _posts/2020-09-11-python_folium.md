@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[python] folium 지도 시각화"
-excerpt: "folium으로 지도(map)시각화를 해보자"
+excerpt: "folium으로 지도(map)시각화를 해보자."
 author: Dayeon Lee
 date: 2020-09-11 21:42:00 +0800
 tags: [python, folium]
@@ -52,7 +52,7 @@ df
   
 ### 4. folium으로 지도 시각화 
   ```python
-  map = folium.Map(location=[35.2258,128.6075],zoom_start=9,
+map = folium.Map(location=[35.2258,128.6075],zoom_start=9,
                  tiles='Stamen Toner')
 map.choropleth(geo_data = geo_str,
                data = df,
