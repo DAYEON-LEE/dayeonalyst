@@ -34,7 +34,7 @@ df
 ### 3. 지도의 정보가 들어가있는 json파일 
 시각화를 하기위해서는 json파일이 필요한데 나는 여기 올라와있는 깃헙의 파일을 다운받아 사용했다.
 > json 깃헙에서 제공 : [json파일](https://github.com/DAYEON-LEE/southkorea-maps/tree/master/kostat/2013/json) 
-> 
+
 하지만 창원시의 데이터만을 들고와 편집했다. 
 ```
 	[Output]
@@ -74,7 +74,7 @@ map
 
 
 
-![png](dayeonlyst.github.io/images/folium_map_changwon_ex.PNG)
+![png](/images/folium_map_changwon_ex.PNG)
 
 
 
