@@ -13,11 +13,11 @@ tags: [python, Kakao, api, crawling]
 
 ### 1-2 카카오 아이디로 로그인한 후 **내 어플리케이션** 에 들어간다.  
 
-![kakao_api_homepage](https://user-images.githubusercontent.com/56374342/93410774-954f9f80-f8d4-11ea-82ce-5446458f9e3a.PNG)
+![kakao_api_homepage](https://user-images.githubusercontent.com/56374342/93410774-954f9f80-f8d4-11ea-82ce-5446458f9e3a.PNG){: width="80%" height="80%"}  
 
 ### 1-3 내 어플리케이션을 추가한 후 들어가면 카카오api key들이 주어진다.
 
-![kakao_api_create_application](https://user-images.githubusercontent.com/56374342/93410937-f6777300-f8d4-11ea-95c1-48184dbfd0bd.PNG)
+![kakao_api_create_application](https://user-images.githubusercontent.com/56374342/93410937-f6777300-f8d4-11ea-95c1-48184dbfd0bd.PNG){: width="80%" height="80%"}  
 
 ### 1-4 api key들은 네이티브, REST, JAVA, Admin key로 나뉘고 상황에 맞게 사용하면 된다. 
 
