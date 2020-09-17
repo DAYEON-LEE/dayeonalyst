@@ -9,6 +9,6 @@ tags: [python, Kakao, api, crawling]
 
 ## 1. 카카오 API key값을 얻기 
 
-1-1 카카오 [kakao develper ](https://developers.kakao.com/) 개발자 홈페이지에 접속한다.
-1-2 카카오 아이디로 로그인한 후 **내 어플리케이션** 에 들어간다. 
+1-1 카카오 [kakao develper ](https://developers.kakao.com/) 개발자 홈페이지에 접속한다. 
+1-2 카카오 아이디로 로그인한 후 **내 어플리케이션** 에 들어간다.  
 1-3 
