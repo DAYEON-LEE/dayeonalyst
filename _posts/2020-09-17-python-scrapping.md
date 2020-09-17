@@ -88,7 +88,7 @@ json_obj
 이 중에 내가 구하고 싶은 값은 x,y값이므로 이렇게 코드를 더해준다. 
 
 
-### 3. JSON파일에서 위도와 경도 구하기
+## 3. JSON파일에서 위도와 경도 구하기
 
 documents 첫 번째 안에 address안에 x,y좌표가 있으니 
 > documents[0]['address']['x']
