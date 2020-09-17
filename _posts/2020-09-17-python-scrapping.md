@@ -91,8 +91,8 @@ json_obj
 ## 3. JSON파일에서 위도와 경도 구하기
 
 documents 첫 번째 안에 address안에 x,y좌표가 있으니 
-> documents[0]['address']['x']
-> documents[0]['address']['y']
+>- documents[0]['address']['x']
+>- documents[0]['address']['y']
 식으로 접근해서 좌표를 가져온다. 
 
 
