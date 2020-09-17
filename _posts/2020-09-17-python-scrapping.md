@@ -53,7 +53,7 @@ json_obj
 
 
 ```
-  [Output] 
+[Output] 
 {'documents': [{'address': {'address_name': '경남 창원시 마산회원구 내서읍 삼계리 197-1',
     'b_code': '4812725028',
     'h_code': '4812725000',
@@ -86,3 +86,41 @@ json_obj
  ```
 
 이 중에 내가 구하고 싶은 값은 x,y값이므로 이렇게 코드를 더해준다. 
+
+
+### 3. JSON파일에서 위도와 경도 구하기
+
+documents 첫 번째 안에 address안에 x,y좌표가 있으니 
+> documents[0]['address']['x']
+> documents[0]['address']['y']
+식으로 접근해서 좌표를 가져온다. 
+
+
+```python
+longtitude = []
+latitude = []
+for i in address:
+    try:
+        url = 'https://dapi.kakao.com/v2/local/search/address.json?query='+i
+        result = requests.get(urlparse(url).geturl(),
+                            headers={'Authorization':'KakaoAK 7bf425da7bc656e27261b380474ef022'})
+        json_obj = result.json()
+        longtitude.append(json_obj['documents'][0]['address']['x'])
+        latitude.append(json_obj['documents'][0]['address']['y'])
+    except:
+        longtitude.append(0)
+        latitude.append(0)
+print(longtitude)
+print(latitude)
+```
+
+위도, 경도를 latitude, longtitude 리스트안에 담고 print해주었다. 
+
+```
+[Output] 
+['128.609790815343', '128.719347539462', '128.690275383692', '128.681022931214', '128.719347539462', '128.660005160088', '128.589396857646', 0, '128.664434312791', 0, '128.649454269739', '128.655821825524', 0, '128.548412673191', '128.668154472564', '128.716937256389', '128.503100300431']
+['35.3805879621255', '35.0921817074027', '35.2074243862455', '35.2320799258082', '35.0921817074027', '35.1640346085716', '35.1583373818969', 0, '35.1476322490856', 0, '35.3658963163472', '35.2281312529098', 0, '35.1842878865456', '35.1731382435751', '35.3562964732157', '35.2260903004507']
+```
+
+이렇게 결과값이 구해지는 것을 알 수 있다. 
+
