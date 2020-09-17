@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] 카카오 API를 이용해 지도의 위도, 경도 알아내기"
+title: "[python] 카카오 API를 이용해 지도의 위도, 경도 "
 excerpt: "카카오 API를 이용해 특정 주소의 위도와 경도를 알아내자."
 author: Dayeon Lee
 date: 2020-09-17 21:42:00 +0800
