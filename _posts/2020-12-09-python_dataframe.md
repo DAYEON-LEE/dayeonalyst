@@ -86,6 +86,7 @@ bts.drop_duplicates()
 
 
   [Output]
+  
 |name|age|blood|
 |--|--|--|
 |정국|24|A|
@@ -106,6 +107,7 @@ bts.drop_duplicates(['age'], keep = 'first')
 
 
   [Output]
+  
 |name|age|blood|
 |--|--|--|
 |정국|24|A|
@@ -130,6 +132,7 @@ bts
 
 
   [Output]
+
 |name|age|blood|
 |--|--|--|
 |정국|24|A|
@@ -154,6 +157,7 @@ bts
 
 
   [Output]
+
 |name|age|blood|
 |--|--|--|
 |정국|27|A|
@@ -174,6 +178,7 @@ bts
 
 
   [Output]
+  
 |name|age|blood|
 |--|--|--|
 |정국 귀여워|27|A|
@@ -200,6 +205,7 @@ bts
 
 
   [Output]
+
 |name|age|blood|
 |--|--|--|
 |정국 귀여워|127|A|
