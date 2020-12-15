@@ -7,8 +7,8 @@ date: 2020-12-15 23:00:00 +0800
 tags: [python, groupby, sort_values, notnull, isnull, re]
 ---
 
-## 그룹별 수치 상위 N개 불러오기
-### 1. groupby함수와 apply함수 이용하기 
+## 1. 그룹별 수치 상위 N개 불러오기
+### groupby함수와 apply함수 이용하기 
 
 > groupby : 데이터프레임에서 특정 열을 기준으로 데이터를 묶음
 
@@ -56,7 +56,31 @@ df.groupby('name').apply(func)
 |  |name|height|score|
 |--|--|--|--|
 |name|  |  |  |				
-|lee|1|lee|155|66|
-|park|3|park|170|78|
+|lee|lee|155|66|
+|park|park|170|78|
 
 
+## 2. 결측치가 아닌 행만 불러오기
+### notnull, isnull함수를 이용하기  
+
+> notnull : Series에서 결측값이 아니면 True, 맞으면 False Boolean값을 나타냄
+> isnull : notnull과 반대로 결측치이면 True, 아니면 False값을 나타냄  
+
+
+새로운 데이터프레임 예시를 들자면 아래와 같습니다. 
+```python
+df = pd.DataFrame({'name':['lee','lee','park','park'],
+                  'height':[160,np.nan,190,170],
+                  'score':[23,66,44,np.nan]})
+df
+```
+|name|height|score|
+|--|--|--|
+|lee|160|23|
+|lee|NaN|66|
+|park|190|NaN|
+|park|170|78|
+
+여기서 결측치가 있는 행을 제외한 데이터프레임만 조회하고자 한다.  
+
+그 때 사용할 수 있는 함수가 notnull이다.   
