@@ -14,7 +14,8 @@ tags: [python, groupby, sort_values, notnull, isnull, re]
 
 우선 새로 정의해서 특정 열을 기준으로 수치를 내림차순하는 함수를 만든다.   
 
-그 전에 데이터프레임을 예시로 만들자면 
+그 전에 데이터프레임을 예시로 만들자면 아래와 같다. 
+이름, 키, 점수의 변수를 만들어 이름별 상위 점수를 구하고자한다.   
 
 ```python 
 import pandas as pd
@@ -30,5 +31,32 @@ df
 |lee|155|66|
 |park|190|44|
 |park|170|78|
+
+
+이름별 상위 점수 1개를 추출하기 위해서 함수를 지정한다.  
+
+```python
+def func(df,column='score',n=1):
+    return df.sort_values(by='score',ascending=False)[:n]
+ ```
+ 
+ 여기서 n=1을 지정해 1개만 뽑고 sort_values를 이용해 숫자를 나열한다.    
+ 여기서 **ascending=False**는 오름차순 말고 내림차순을 하라는 의미이다.   
+ 그래서 상위 점수 내림차순해 맨 위에 1개를 추출할 수 있게 된다.   
+
+* Point : 이 함수를 apply에 적용하여 데이터프레임에 적용이 가능
+
+```python
+df.groupby('name').apply(func)
+```
+
+이름을 그룹핑해서 이름별 상위 점수 1개를 뽑았다.    
+그에 따른 결과는 다음과 같다.   
+
+|  |name|height|score|
+|--|--|--|--|
+|name|  |  |  |				
+|lee|1|lee|155|66|
+|park|3|park|170|78|
 
 
