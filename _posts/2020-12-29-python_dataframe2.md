@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] 문자를 날짜로 datetime이용해 변환/그룹별 특정 칼럼의 값 비율, 누적합, 누적비율계산"
+title: "[python] 문자를 날짜로 datetime이용해 변환/그룹별 특정 칼럼의 비율, 누적합, 누적비율계산"
 excerpt: "데이터프레임에서 특정함수를 사용해 필요한 데이터를 불러보자."
 author: Dayeon Lee
 date: 2020-12-29 23:00:00 +0800
@@ -45,7 +45,7 @@ dtype: object
 ```
 
 
-## 2. 그룹별 특정 칼럼의 값의 수, 비율, 누적비율계산하기
+## 2. 그룹별 특정 칼럼의 값의 , 비율, 누적비율계산하기
 ### groupby, cumsum, apply함수를 이용하기 
 
 ```python 
@@ -67,7 +67,7 @@ a
 
 
 위와 같은 데이터프레임을 사용한다고 하자. 
-여기서 color별 age의 수와 값의 비율 그리고 누적비율을 계산해보자.
+여기서 color별 age의 와 값의 비율 그리고 누적비율을 계산해보자.
 
 ```python 
 A = a.groupby(['color','age']).size().to_frame()
@@ -82,3 +82,47 @@ A
 
 코드를 해석하자면 
 
+```python 
+A = a.groupby(['color','age']).size().to_frame()
+A
+```
+
+
+|--|--|0|
+|--|--|--|
+|color|age|--|	
+|blue|40|1|
+|--|70|1|
+|red|20|1|
+|--|30|1|
+
+다음과 같은 프레임이 나온다. 
+
+
+```python 
+A = A.reset_index()
+A = A.rename(columns={0:'count'})
+A
+```
+A의 프레임을 인덱스를 초기화시키고 칼럼면 0을 count로 바꾸면 다음과 같다.  
+
+
+|color|age|count|
+|--|--|--|
+|0|blue|40|1|
+|1|blue|70|1|
+|2|red|20|1|
+|3|red|30|1|
+
+다음과 같은 데이터프레임을 구할 수 있다. 
+여기서 부턴 groupby함수를 사용해 function을 적용하면 된다. 
+
+
+```python 
+A['cum_count'] = A.groupby('color')['age'].cumsum(axis=0)
+A['norm_count'] = A.groupby('color')['age'].apply(lambda x : x/sum(x))
+A['cum_norm_count'] = A.groupby('color')['norm_count'].cumsum(axis=0)
+A
+```
+
+우선 cumsum은 color별 age의 합을 더해 
