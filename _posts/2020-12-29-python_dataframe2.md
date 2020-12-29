@@ -4,7 +4,7 @@ title: "[python] 문자를 날짜로 datetime이용해 변환/그룹별 특정 �
 excerpt: "데이터프레임에서 특정함수를 사용해 필요한 데이터를 불러보자."
 author: Dayeon Lee
 date: 2020-12-29 23:00:00 +0800
-tags: [python, groupby]
+tags: [python, groupby,]
 ---
 
 ## 1. 문자를 날짜로 datetime이용해 변환하기
@@ -125,4 +125,17 @@ A['cum_norm_count'] = A.groupby('color')['norm_count'].cumsum(axis=0)
 A
 ```
 
-우선 cumsum은 color별 age의 합을 더해 
+우선 cumsum은 color별 age의 합을 더해 누적해준다.  
+
+그리고 color별 age값을 정규화해주는 함수는 apply, lambda를 사용해 x/sum(x)해주어 색깔별 나이의 값이 차지하는 비율을 구한다.  
+
+마지막으로 정규화해 나타낸 비율을 누적합한 것을 데이터프레임에 담았다.   
+
+|--|color|age|count|cum_count|norm_count|cum_norm_count|
+|--|--|--|--|--|--|--|
+|0|blue|40|1|40|0.363636|0.363636|
+|1|blue|70|1|110|0.636364|1.000000|
+|2|red|20|1|20|0.400000|0.400000|
+|3|red|30|1|50|0.600000|1.000000|
+
+다음과 같은 결과값을 얻을 수 있다. 
