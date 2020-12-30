@@ -54,7 +54,7 @@ def solution(participant, completion):
     
     
 
-여기서 시간 복잡도가 가장 적은 해시라는 자료구조를 이용하는게 Point였다.  
+여기서 시간 복잡도가 가장 적은 해시라는 자료구조를 이용하는게 <span style="color:blue">Poin</span>였다.  
 우선 딕셔너리가 해시 구조중에 하나이므로 d={}를 생성했다.   
 
 그리고 participant(마라톤 참여자)의 이름을 키로 두고 value값을 get합수를 사용해 이름이 나오면 1씩 더하게끔 했다.   
