@@ -38,3 +38,41 @@ def solution(participant, completion):
     answer = answer[0]
     return answer
   ```
+
+
+이름에 중복이 있는 문제이므로 for문을 돌리는 방법도 있겠지만 시간도 많이 걸리고 효율성이 떨어진다.  
+이와 같은 상황에 사용할 수 있는 자료구조는 **해시**이다.  
+
+> 해시 : key(키)와 value(값)를 저장하는 데이터 구조 
+
+- 장점
+    1. 데이터 저장 또는 읽는 속도가 빠름 
+    2. key에 대한 데이터가 중복확인이 쉬움
+- 단점
+    1. 저장공간이 많이 필요
+    2. 주소가 동일할 경우 충돌가능성 있음 
+    
+    
+
+여기서 시간 복잡도가 가장 적은 해시라는 자료구조를 이용하는게 Point였다.  
+우선 딕셔너리가 해시 구조중에 하나이므로 d={}를 생성했다.   
+
+그리고 participant(마라톤 참여자)의 이름을 키로 두고 value값을 get합수를 사용해 이름이 나오면 1씩 더하게끔 했다.   
+
+그럼 같은 이름이 중복되어 나와도 value값은 2이상으로 표현되어 구별할 수 있다.  
+그리고 completion(완주자)의 이름이 키로 나오면 그 키(완주자 이름)의 value값을 1을 빼면 보통은 값이 0이 된다.   
+여기서 상쇄되지 않은 이름이 완주하지 못한 사람으로 나옴을 알 수 있다.   
+
+
+
+### collections 모듈 사용한 예시 
+ ```Python
+ def solution(participant, completion):
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    return list(answer.keys())[0]
+
+ ```
+ 
+ 다른 사람의 코드 예시를 보다가 모듈을 적절히 활용하면 더 쉽게 접근이 가능하다고 느껴 들고왔다.  
+ 
+ 
