@@ -15,7 +15,8 @@ import json
 import folium
 import pandas as pd
 ```
-### 2. 시각화에 필요한 데이터 프레임
+### 2. 시각화에 필요한 데이터 프레임 
+
 ```python
 df = pd.DataFrame({'index':['창원시의창구','창원시성산구','창원시진해구','창원시마산합포구','창원시마산회원구'],
                   'count':[30,20,50,10,90]})
