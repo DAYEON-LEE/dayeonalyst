@@ -19,6 +19,7 @@ import sys
 text_data = ['Hi!!!! I. Love. This. Song....',
             '10000% Agree!!!! #LoveIT',
             'Right?!?!?!']
+            
 # 구두점 문자로 이룯어진 딕셔너리 생성
 punctuation = dict.fromkeys(i for i in range(sys.maxunicode) if unicodedata.category(chr(i)).startswith('P'))
 # 문자열의 구두점을 삭제 
