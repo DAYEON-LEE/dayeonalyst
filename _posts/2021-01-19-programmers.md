@@ -54,8 +54,7 @@ def solution(priorities, location):
 priorities의 값의 index를 loc이라는 이름의 리스트에 넣어 max값이 첫 번째로 나올 때까지 index값의 위치를 변경한다.    
 
 그렇게 반복하다 만약 priorities의 첫 번째값이 max가 나오면 우선순위값이 내림차순일 것이다.   
-최종적으로 priorities =  [3,2,1,1]  
-           loc [2,3,0,1]
+최종적으로 priorities =  [3,2,1,1] , loc [2,3,0,1]
 
 우리가 찾고있는 location=2의 값은 3이었고 현재 3의 위치는 첫 번째에 위치해 return 값은 1이다.    
 
