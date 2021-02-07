@@ -79,7 +79,6 @@ enumerate함수를 사용해 구하는 방식도 가능할 것 같아 시도했�
 그 부분을 해결하지 못한채 enumerate를 잘 활용한 다른 코드를 발견해 아래에 적어본다. 
 
 
-
 배울점이 많은 다른 사람 풀이 코드 
 ```Python
 def solution(priorities, location):
