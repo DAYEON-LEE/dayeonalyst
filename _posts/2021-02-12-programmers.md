@@ -3,7 +3,7 @@ layout: post
 title: "[Programmers] 프로그래머스 lv.2 튜플"
 excerpt: "파이썬을 이용한 알고리즘 공부"
 author: Dayeon Lee
-date: 2021-02-012 19:00:00 +0800
+date: 2021-02-12 17:00:00 +0800
 tags: [python, algorithm,split,sorted,lambda,re]
 ---
 
