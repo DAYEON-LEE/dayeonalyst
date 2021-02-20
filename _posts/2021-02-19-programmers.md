@@ -6,7 +6,8 @@ author: Dayeon Lee
 date: 2021-02-19 13:00:00 +0800
 tags: [python, algorithm,programmers]
 ---
-
+ 
+ 
 1차시도 (런타임에러)
 ```Python
 def solution(skill, skill_trees):
