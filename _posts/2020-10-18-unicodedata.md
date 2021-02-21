@@ -8,6 +8,7 @@ tags: [python, text_mining, unicodedata]
 ---
 
 
+
 # 구두점 삭제 
 
 ```Python
